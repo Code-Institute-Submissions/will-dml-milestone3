@@ -1,31 +1,28 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# THE GAME
+------------------Feed the machine!-------------------------
 
-Welcome USER_NAME,
+The computer is hungry! Find what it wants to eat before it eats you!
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+In this game, the user is challenged to guess what does the computer wants, by choosing, one after an other, the 3 different ingredients that will be served to the machine.
 
-## Reminders
+4 lives will be provided to the user, losing one every wrong ingredient chosen
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+## MUST HAVE
+- Generate a random choice from 3 differents lists of strings
+- Function that let the user pick from one of the list before getting to the next one
+- Takes input from the user
+- Print an error message if user's input is not valid
+- Verify if the answer is correct
+- End game if guess right or if number of attempt maximum is reached
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### SHOULD HAVE
+- Number of attempt left printed after each guess
+- Print answer if game lost
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+#### NICE TO HAVE
+- Let the user restart the game
+- Simplifying user's input and attached functions by converting strings to integers.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
