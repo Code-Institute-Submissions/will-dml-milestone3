@@ -1,5 +1,5 @@
-# THE GAME
-------------------Feed the machine!-------------------------
+# ------------------Feed the machine!-------------------------
+
 
 The computer is hungry! Find what it wants to eat before it eats you!
 
