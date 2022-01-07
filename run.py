@@ -37,10 +37,11 @@ def game_run():
     global lives
 
     def loose_game():
+        global lives
         lives = 4
         print('--------------------------------------------------------------')
         print('The computer was tired of waiting and ate you instead...sorry!')
-        input('Press any key to continue')
+        input('Press any key to restart')
             
         if input:
             game_run()
