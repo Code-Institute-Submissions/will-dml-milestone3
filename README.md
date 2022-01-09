@@ -1,4 +1,4 @@
-# ------------------Feed the machine!-------------------------
+# ------------------Feed the computer!-------------------------
 
 
 The computer is hungry! Find what it wants to eat before it eats you!
