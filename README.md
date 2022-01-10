@@ -53,7 +53,27 @@ return a message that indicate the error.
 
 ## Flow
 
+## Data model 
 
+## Testing
+
+## Bugs
+
+## Deployment
+
+This project was deployed using Code Institute mock terminal on Heroku.
+
+-Steps for deployment:
+
+-Fork or clone this repository
+
+-Create a new Heroku app
+
+-Set the buildbags to python and NodeJS in that order
+
+-Link the Heroku app to the repository
+
+-Click on deploy
 
 
 

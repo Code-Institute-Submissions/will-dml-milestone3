@@ -153,12 +153,12 @@ def game_run():
         print('--------------------------------------------------------------')
         print('Well done, It loves your soup !')
         print("You fed the computer, You get to live one more day.")
-        input('Press any key to restart\n')
+        input('Press enter to restart\n')
 
         if input:
             game_run()
 
-    input('Press any key to start\n')
+    input('Press enter to start\n')
 
     if input:
         first_round()
