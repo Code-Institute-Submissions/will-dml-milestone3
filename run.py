@@ -25,8 +25,9 @@ lives = 4
 
 def game_run():
     """
-    Contains all functions needed to run the game. It also generate a computer choice
-    of ingredients and print a welcome message. 
+    Contains all functions needed to run the game.
+    It also generate a computer choice
+    of ingredients and print a welcome message.
     """
     computer_first_choice = computer_choice_generator(ingredient_list_one)
     computer_second_choice = computer_choice_generator(ingredient_list_two)
@@ -37,8 +38,6 @@ def game_run():
     print('The machine would like a good soup. Can you guess what\
  to put in?\nChoose carefully your ingredients or it might not like it ...')
     print('-----------------------------------------------------------------')
-
-    
     global lives
 
     def loose_game():
@@ -52,11 +51,12 @@ def game_run():
         input('Press any key to restart\n')
         if input:
             game_run()
-    
+
     def first_round():
         """
-        Runs the first round of the game, display computer choice, takes user input
-        and verify the answer. 
+        Runs the first round of the game,
+        display computer choice, takes user input
+        and verify the answer.
         """
         global lives
 
@@ -75,7 +75,7 @@ def game_run():
 
             else:
                 lives = lives - 1
-                print(f"\nOops, the machine is not in the mood for {user_input}.")
+                print(f"\nOops, It is not in the mood for {user_input}.")
                 print(f"Only {lives} lives left")
                 print('------------------------------------------------------')
                 first_round()
@@ -83,11 +83,11 @@ def game_run():
             print('\nThis ingredient is not in the list!')
             first_round()
 
-    
     def second_round():
         """
-        Runs the second round of the game, display computer choice, takes user input
-        and verify the answer. 
+        Runs the second round of the game,
+        display computer choice, takes user input
+        and verify the answer.
         """
         global lives
 
@@ -106,26 +106,25 @@ def game_run():
 
             else:
                 lives = lives - 1
-                print(f"\nOops, the machine is not in the mood for {user_input}.")
+                print(f"\nOops, It is not in the mood for {user_input}.")
                 print(f"Only {lives} lives left")
                 print('------------------------------------------------------')
                 second_round()
         else:
             print('\nThis ingredient is not in the list!')
             second_round()
-        
 
     def third_round():
         """
-        Runs the third round of the game, display computer choice, takes user input
-        and verify the answer. 
+        Runs the third round of the game,
+        display computer choice, takes user input
+        and verify the answer.
         """
         global lives
 
         print('And a last one:')
         user_proposition_three = list_index(ingredient_list_three)
         user_input = input('You choose:\n')
-
 
         if lives == 0:
             return loose_game()
@@ -136,7 +135,7 @@ def game_run():
 
             else:
                 lives = lives - 1
-                print(f"\nOops, the machine is not in the mood for {user_input}.")
+                print(f"\nOops, It is not in the mood for {user_input}.")
                 print(f"Only {lives} lives left")
                 print('------------------------------------------------------')
                 third_round()
@@ -146,7 +145,8 @@ def game_run():
 
     def win_game():
         """
-        Function that is called if the game is won ,let the user being able to restart
+        Function that is called if the game is won ,
+        let the user being able to restart
         """
         global lives
         lives = 4

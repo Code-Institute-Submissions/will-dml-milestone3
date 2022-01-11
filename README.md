@@ -53,7 +53,7 @@ return a message that indicate the error.
 
 ## Flow
 
-## Data model 
+## Data model
 
 ## Testing
 
